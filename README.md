@@ -52,5 +52,12 @@ numpy
 matplotlib
 scikit-learn
 tqdm
-
+🚀 Training
 python src/train.py --epochs 20 --batch-size 128 --lr 0.1 --device cuda
+
+📈 Evaluation
+python src/evaluate.py --checkpoint checkpoints/logreg_mnist.pt --device cpu
+
+🔍 Prediction
+python src/predict.py --image path/to/digit.png --checkpoint checkpoints/logreg_mnist.pt
+
